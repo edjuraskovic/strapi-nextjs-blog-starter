@@ -8,12 +8,15 @@ https://cloudinary.com
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
 
-Use yarn to install the project dependencies
+Uses yarn to install the project dependencies
+
+
 
 ## Setup
 The database configuration file is located at ```backend\config\database.js```
 
 Create a .env file by copying the env.example located at ```backend\.env.example``` and fill in your DB credentials and Cloudinary variables.  
+
 
 
 ## Installation
