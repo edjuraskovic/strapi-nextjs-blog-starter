@@ -2,8 +2,10 @@
 Based on:
 https://github.com/strapi/strapi-starter-next-blog
 
-This extension includes Cloudinary provider allowing you to upload the media content in Cloudinary
+This extension includes:
+- Cloudinary provider allowing you to upload the media content in Cloudinary
 https://cloudinary.com
+- articles pagination + React infinite scroll
 
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
