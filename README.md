@@ -2,7 +2,7 @@
 Based on:
 https://github.com/strapi/strapi-starter-next-blog
 
-This extension includes:
+The extended starter includes:
 - Cloudinary provider allowing you to upload the media content in Cloudinary
 https://cloudinary.com
 - articles pagination + React infinite scroll
@@ -45,4 +45,4 @@ Once the creation of your project is completed you will be prompted to http://lo
 Frontent will be available on http://localhost:3000/
 
 
-Enjoy styling your project :sparkles:
+Cheers :sparkles:
