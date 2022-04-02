@@ -2,8 +2,10 @@
 Based on:
 https://github.com/strapi/strapi-starter-next-blog
 
-This extension includes Cloudinary provider allowing you to upload the media content in Cloudinary
+The extended starter includes:
+- Cloudinary provider allowing you to upload the media content in Cloudinary
 https://cloudinary.com
+- articles pagination + React infinite scroll
 
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
@@ -40,6 +42,7 @@ Enter frontend directory and run the following command:
 
 Once the creation of your project is completed you will be prompted to http://localhost:1337/admin in order to create the first admin user for your project and to log in into the administration panel.
 
+Frontent will be available on http://localhost:3000/
 
 
-Enjoy styling your project :sparkles:
+Cheers :sparkles:
