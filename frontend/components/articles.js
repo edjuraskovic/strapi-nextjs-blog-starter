@@ -20,9 +20,7 @@ const Articles = ({ articles }) => {
     const toggleHasMore = () => setHasMore(hasMore => !hasMore);
 
   return (
-    <div>
-      <div className="uk-child-width-1" data-uk-grid="true">
-        <div>
+    <section className="max-w-screen-2xl">
         {posts.length > 0 ? (
           <InfiniteScroll
           dataLength={posts.length}
@@ -30,26 +28,24 @@ const Articles = ({ articles }) => {
           hasMore={hasMore}
           loader={<h4>Loading...</h4>}
           endMessage={
-            <p style={{ textAlign: "center" }}>
-              <b>Yay! You have seen it all</b>
-            </p>
+            <div className="my-12 p-4 mx-auto flex justify-center">
+              <span>Yay! You have seen it all</span>
+            </div>
           }
         >
-          {posts.map((data) => (
-            <div key={data.id}>
-              <div className="back" style={{textAlign: "center"}}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+            {posts.map((data) => (
+              <div key={data.id} className="rounded-lg">
                 <Card article={data} key={data.slug} />
+                {data.completed}
               </div>
-              {data.completed}
-            </div>
-          ))}
+            ))}
+          </div>
         </InfiniteScroll>
         ): (
           <p>Content comming soon</p>
         )}
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

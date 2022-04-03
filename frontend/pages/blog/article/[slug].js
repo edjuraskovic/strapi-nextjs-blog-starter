@@ -21,53 +21,52 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories}>
       <Seo seo={seo} />
-      <div
-        id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
-      >
-        <h1>{article.title}</h1>
-      </div>
-      <div className="uk-section">
-        <div className="uk-container uk-container-small">
-          <ReactMarkdown source={article.content} escapeHtml={false} />
-          <hr className="uk-divider-small" />
-          <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-            <div>
-              {articleAuthor ? (
-                article.author.picture && (
-                  <Image
-                    image={article.author.picture}
-                    style={{
-                      position: "static",
-                      borderRadius: "50%",
-                      height: 30,
-                    }}
-                  />
-                )
-              ): (
-                <div>belli</div>
-              )}
-              
-            </div>
-            <div className="uk-width-expand">
-              <div className="uk-margin-remove-bottom">
+      <article className="max-w-screen-2xl my-0 mx-auto p-4">
+        <h1 className="text-4xl md:text-6xl text-center my-12 md:my-16 font-bold">{article.title}</h1>
+        <div
+          className="min-h-banner-sm lg:min-h-banner-md bg-cover bg-no-repeat bg-center"
+          style={{backgroundImage: `url(${imageUrl})`}}
+        ></div>
+        <div className="my-6">
+          <div className="">
+            <ReactMarkdown source={article.content} escapeHtml={false} />
+            <hr className="my-4" />
+            <div className="my-6">
+              <div>
                 {articleAuthor ? (
-                  <div>By {article.author.name}</div>
+                  article.author.picture && (
+                    <Image
+                      image={article.author.picture}
+                      style={{
+                        position: "static",
+                        borderRadius: "50%",
+                        height: 30,
+                      }}
+                    />
+                  )
                 ): (
-                  <div>By domain name</div>
+                  <div>belli</div>
                 )}
-                
               </div>
-              <p className="uk-text-meta uk-margin-remove-top">
-                <Moment format="MMM Do YYYY">{article.published_at}</Moment>
-              </p>
+              <div className="uk-width-expand">
+                <div className="uk-margin-remove-bottom">
+                  {articleAuthor ? (
+                    <div>By {article.author.name}</div>
+                  ): (
+                    <div>By domain name</div>
+                  )}
+                  
+                </div>
+                <p className="uk-text-meta uk-margin-remove-top">
+                  <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </article>
+      
+      
     </Layout>
   );
 };

@@ -15,6 +15,7 @@ const Image = ({ image, style }) => {
       src={imageUrl}
       alt={alt}
       style={style}
+      className="w-full"
     />
   );
 };
