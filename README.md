@@ -6,6 +6,7 @@ The extended starter includes:
 - Cloudinary provider allowing you to upload the media content in Cloudinary
 https://cloudinary.com
 - articles pagination + React infinite scroll
+- tailwindcss
 
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
