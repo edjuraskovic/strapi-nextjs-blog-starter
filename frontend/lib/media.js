@@ -6,8 +6,9 @@ export function getStrapiMedia(media) {
     ? getStrapiURL(media.url)
     : media.url;
     return imageUrl;
-  } else {
-    return 'https://via.placeholder.com/1600x400.png?text=Placeholder'
+  } 
+  else {
+    return '/placeholder.jpg'
   }
   
 }

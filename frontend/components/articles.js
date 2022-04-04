@@ -29,13 +29,13 @@ const Articles = ({ articles }) => {
           loader={<h4>Loading...</h4>}
           endMessage={
             <div className="my-12 p-4 mx-auto flex justify-center">
-              <span>Yay! You have seen it all</span>
+              <span>Yay! You have seen all posts</span>
             </div>
           }
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+          <div className="md:masonry-2-col lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit">
             {posts.map((data) => (
-              <div key={data.id} className="rounded-lg">
+              <div key={data.id} className="rounded-lg my-12">
                 <Card article={data} key={data.slug} />
                 {data.completed}
               </div>
@@ -43,7 +43,9 @@ const Articles = ({ articles }) => {
           </div>
         </InfiniteScroll>
         ): (
-          <p>Content comming soon</p>
+          <div className="my-8">
+            <p className="text-xl">Content comming soon</p>
+          </div>
         )}
     </section>
   );

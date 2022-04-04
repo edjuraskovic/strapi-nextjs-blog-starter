@@ -1,3 +1,23 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@layer utilities {
+    @variants responsive {
+        .masonry-3-col {
+            column-count: 3;
+            column-gap: 3em;
+        }
+        .masonry-2-col {
+            column-count: 2;
+            column-gap: 3em;
+        }
+        .break-inside {
+            break-inside: avoid;
+        }
+    }
+}

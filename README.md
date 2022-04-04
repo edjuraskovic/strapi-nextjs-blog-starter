@@ -11,16 +11,14 @@ https://cloudinary.com
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
 
+U+26A0 only works for Strapi v3 (native support for MongoDB is discontinued after v3) U+26A0
+
 Uses yarn to install the project dependencies
-
-
 
 ## Setup
 The database configuration file is located at ```backend\config\database.js```
 
 Create a .env file by copying the env.example located at ```backend\.env.example``` and fill in your DB credentials and Cloudinary variables.  
-
-
 
 ## Installation
 
@@ -45,5 +43,7 @@ Once the creation of your project is completed you will be prompted to http://lo
 
 Frontent will be available on http://localhost:3000/
 
+Deploying to production
+You will need to deploy the frontend and backend projects separately.
 
 Cheers :sparkles:
