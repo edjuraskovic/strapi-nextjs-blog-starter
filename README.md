@@ -8,7 +8,7 @@ https://cloudinary.com
 - tailwindcss
 - articles pagination + React infinite scroll
 
-It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
+It is bootstrapped with MongoDB / locally or connect to Atlas Mongo DB
 https://www.mongodb.com
 
 :warning: only works for Strapi v3 (native support for MongoDB is discontinued after v3) :warning:
