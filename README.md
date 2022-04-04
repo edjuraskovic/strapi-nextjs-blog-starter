@@ -5,13 +5,13 @@ https://github.com/strapi/strapi-starter-next-blog
 The extended starter includes:
 - Cloudinary provider allowing you to upload the media content in Cloudinary
 https://cloudinary.com
-- articles pagination + React infinite scroll
 - tailwindcss
+- articles pagination + React infinite scroll
 
 It is bootstrapped with MongoDB / locally or connecting to Atlas Mongo DB
 https://www.mongodb.com
 
-U+26A0 only works for Strapi v3 (native support for MongoDB is discontinued after v3) U+26A0
+:warning: only works for Strapi v3 (native support for MongoDB is discontinued after v3) :warning:
 
 Uses yarn to install the project dependencies
 
